@@ -1,0 +1,48 @@
+.dm{
+    font-family: 'DM Serif Display', serif;
+}
+.inter{
+    font-family: 'Inter', sans-serif;
+}
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.jl_grey_bg{
+    background-color: #484848;
+}
+.jl_grey_txt{
+    color: #484848;
+}
+.jl_yellow_txt{
+    color: #C9A664;
+}
+.text_60{
+    font-size: 60px;
+}
+.text_50{
+    font-size: 50px;
+}
+.text_40{
+    font-size: 40px;
+}
+.text_24{
+    font-size: 24px;
+}
+.text_32{
+    font-size: 32px;
+}
+.regular{
+    font-weight: 400;
+}
+.bold{
+    font-weight: bold;
+}
+.light{
+    font-weight: lighter;
+}
+.mt100{
+    margin-top: 100px;
+}
+.mt150{
+    margin-top: 150px;
+}

@@ -1,0 +1,23 @@
+.banner_bg{
+    background-image: url('../../images/banner/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+}
+
+@media screen and (max-width: 840px) {
+    .banner_bg{
+        background-image: url('../../images/banner/banner.png');
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+}
