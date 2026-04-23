@@ -1,48 +1,60 @@
-.dm{
-    font-family: 'DM Serif Display', serif;
+.dm { font-family: 'DM Serif Display', serif; }
+.inter { font-family: 'Inter', sans-serif; }
+.poppins { font-family: 'Poppins', sans-serif; }
+.jl_grey_bg { background-color: #484848; }
+.jl_grey_txt { color: #484848; }
+.jl_yellow_txt { color: #C9A664; }
+.jl_yellow_bg { background-color: #C9A664; }
+.text_60 { font-size: 60px; }
+.text_50 { font-size: 50px; }
+.text_40 { font-size: 40px; }
+.text_32 { font-size: 32px; }
+.text_24 { font-size: 24px; }
+.regular { font-weight: 400; }
+.bold { font-weight: bold; }
+.light { font-weight: lighter; }
+.mt100 { margin-top: 100px; }
+.mb100 { margin-bottom: 100px; }
+.mt200 { margin-top: 200px; }
+.mb200 { margin-bottom: 200px; }
+.mt150 { margin-top: 150px; }
+.mb150 { margin-bottom: 150px; }
+.jl_section_gap { padding-top: 150px; }
+
+@media (max-width: 767px) {
+  .mt100 { margin-top: 52px; }
+  .mt150 { margin-top: 64px; }
+  .jl_section_gap { padding-top: 64px; }
+  .text_50 { font-size: 32px; }
+  .text_60 { font-size: 34px; }
 }
-.inter{
-    font-family: 'Inter', sans-serif;
+
+.jl_navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 0px 0;
 }
-.poppins{
-    font-family: 'Poppins', sans-serif;
+
+.nav-wa-btn {
+  background-color: #25d366;
+  color: #fff !important;
+  border-radius: 25px;
+  padding: 8px 18px !important;
+  font-weight: bold;
+  transition: background 0.2s;
 }
-.jl_grey_bg{
-    background-color: #484848;
+.nav-wa-btn:hover {
+  background-color: #1ebe5d;
+  color: #fff !important;
 }
-.jl_grey_txt{
-    color: #484848;
+
+.jl-nav-link {
+  display: inline-block;
+  padding: 8px 12px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
 }
-.jl_yellow_txt{
-    color: #C9A664;
-}
-.text_60{
-    font-size: 60px;
-}
-.text_50{
-    font-size: 50px;
-}
-.text_40{
-    font-size: 40px;
-}
-.text_24{
-    font-size: 24px;
-}
-.text_32{
-    font-size: 32px;
-}
-.regular{
-    font-weight: 400;
-}
-.bold{
-    font-weight: bold;
-}
-.light{
-    font-weight: lighter;
-}
-.mt100{
-    margin-top: 100px;
-}
-.mt150{
-    margin-top: 150px;
+.jl-nav-link:hover {
+  color: #C9A664 !important;
 }

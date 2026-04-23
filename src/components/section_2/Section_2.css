@@ -1,0 +1,45 @@
+.wa_contact_link {
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.wa_contact_link:hover { opacity: 0.75; }
+
+.about_img_grid {
+  display: flex;
+  gap: 12px;
+  height: 480px;
+}
+
+.about_img_col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.about_img {
+  object-fit: cover;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.about_img_tall {
+  flex: 1.2;
+  height: 100%;
+  max-width: 55%;
+}
+
+.about_img_small {
+  flex: 1;
+  height: 50%;
+}
+
+@media (max-width: 768px) {
+  .about_img_grid {
+    height: 280px;
+    margin-top: 20px;
+  }
+  .about_img {
+    border-radius: 14px;
+  }
+}

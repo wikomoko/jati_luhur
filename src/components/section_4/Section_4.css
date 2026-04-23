@@ -1,0 +1,136 @@
+/* ── Porto Cards ── */
+.porto_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .porto_grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+}
+
+.porto_card {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  background: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.porto_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.16);
+}
+
+.porto_img_wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+}
+
+@media (min-width: 768px) {
+  .porto_img_wrap {
+    aspect-ratio: 2 / 3;
+  }
+}
+
+.porto_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.porto_card:hover .porto_img {
+  transform: scale(1.08);
+}
+
+/* Tag badge */
+.porto_tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(201, 166, 100, 0.93);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 20px;
+  letter-spacing: 0.4px;
+  backdrop-filter: blur(4px);
+}
+
+/* Dark gradient overlay at bottom of image */
+.porto_img_wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.35) 45%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Title overlaid on image */
+.porto_overlay_title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 10px 8px;
+  z-index: 1;
+}
+
+.porto_overlay_title h5 {
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 2px;
+  line-height: 1.3;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.7);
+}
+
+.porto_overlay_title p {
+  color: rgba(255,255,255,0.90);
+  font-size: 10px;
+  margin-bottom: 0;
+  line-height: 1.3;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
+
+@media (min-width: 768px) {
+  .porto_overlay_title h5 {
+    font-size: 14px;
+  }
+  .porto_overlay_title p {
+    font-size: 11px;
+  }
+  .porto_tag {
+    font-size: 11px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+/* ── Testimoni Cards ── */
+.testi_card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  height: 100%;
+}
+
+.testi_avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f5ead8;
+  color: #C9A664;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}

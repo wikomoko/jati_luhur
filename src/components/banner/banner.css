@@ -1,23 +1,112 @@
-.banner_bg{
-    background-image: url('../../images/banner/banner.png');
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    border-bottom-left-radius: 120px;
-    border-bottom-right-radius: 120px;
+.banner_bg {
+  background-image: url('../../images/banner/banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  position: relative;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 840px) {
-    .banner_bg{
-        background-image: url('../../images/banner/banner.png');
-        background-size: cover;
-        background-position: center;
-        height: 80vh;
-        display: flex;
-        align-items: center;
-        border-bottom-left-radius: 60px;
-        border-bottom-right-radius: 60px;
-    }
+.banner_overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(72,72,72,0.82) 0%, rgba(72,72,72,0.45) 100%);
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.banner_content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner_title {
+  line-height: 1.15;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.banner_subtitle {
+  font-size: 18px;
+  opacity: 0.92;
+  margin-top: 16px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.btn_wa_banner {
+  background-color: #25d366;
+  border: none;
+  font-size: 16px;
+}
+.btn_wa_banner:hover { background-color: #1ebe5d; }
+
+.btn_porto_banner {
+  background-color: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.8);
+  color: #fff;
+  font-size: 16px;
+  backdrop-filter: blur(4px);
+}
+.btn_porto_banner:hover {
+  background-color: rgba(255,255,255,0.25);
+  color: #fff;
+}
+
+.banner_inner {
+  max-width: 680px;
+}
+
+.banner_heading {
+  font-size: 60px;
+}
+
+.banner_btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.banner_subtitle_extra {
+  display: inline;
+}
+
+@media screen and (max-width: 767px) {
+  .banner_bg {
+    height: 35vh;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    align-items: flex-end;
+    padding-bottom: 48px;
+  }
+  .banner_overlay {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  .banner_inner {
+    text-align: center;
+  }
+  .banner_heading {
+    font-size: 34px;
+  }
+  .banner_subtitle {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .banner_subtitle_extra {
+    display: none;
+  }
+  .banner_btns {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .btn_wa_banner,
+  .btn_porto_banner {
+    font-size: 14px;
+    padding: 10px 18px !important;
+  }
 }
