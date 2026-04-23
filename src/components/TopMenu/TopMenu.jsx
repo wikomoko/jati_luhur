@@ -56,11 +56,11 @@ function TopMenu() {
                 </a>
               </li>
             ))}
-            <li>
+            {/* <li>
               <a className="jl-nav-link nav-wa-btn inter inline-block mt-1" href={waLink} target="_blank" rel="noreferrer">
                 <i className="fa-brands fa-whatsapp mr-2"></i>087774221789
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       )}
