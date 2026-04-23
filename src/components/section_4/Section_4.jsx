@@ -51,7 +51,7 @@ function Section_4() {
       </div>
 
       {/* Testimoni */}
-      <div id="kontak" className='container mt150 mb-12'>
+      <div id="kontak" className='md:container mt150 mb-12 px-5 md:px-0'>
         <p className='text-center inter bold jl_yellow_txt mb-2' style={{letterSpacing:'2px', fontSize:'13px'}}>KATA PELANGGAN</p>
         <h3 className='text-center jl_grey_txt text_32 dm mb-12'>Testimoni</h3>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
